@@ -1,6 +1,16 @@
 # DreamHome Agency Data Requests
 
-As a data analyst for DreamHome Agency, you've received the following data requests from various departments. Please provide the requested information using our database. Remember to use appropriate aliases for readability and include column headers in your results.
+As a data analyst for DreamHome Agency, you've received the following data requests from various departments. Please provide the requested information using our database. 
+
+## Instructions
+1. Write your SQL query in the corresponding file in the `queries/` directory (e.g., `queries/request-1.sql`).
+2. Ensure your query is written under the correct comment header (e.g., `-- 1.1`).
+3. To verify your answers, run the automated test runner:
+   ```bash
+   python -m pytest
+   ```
+4. Aim for "PASS" on all checks.
+
 
 ## 1. Property Management Department
 

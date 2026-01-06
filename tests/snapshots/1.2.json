@@ -1,0 +1,314 @@
+[
+  [
+    "PR1423",
+    "16 Holhead",
+    "Aberdeen",
+    "AB7 5SU",
+    "2013-05-14",
+    "no dining room"
+  ],
+  [
+    "PR1423",
+    "16 Holhead",
+    "Aberdeen",
+    "AB7 5SU",
+    "2013-05-24",
+    "too small"
+  ],
+  [
+    "PR9478",
+    "6 Argyll St",
+    "London",
+    "NW2",
+    null,
+    null
+  ],
+  [
+    "PR4567",
+    "6 Lawrence St",
+    "Glasgow",
+    "G11 9QX",
+    "2013-04-20",
+    "too remote"
+  ],
+  [
+    "PR4567",
+    "6 Lawrence St",
+    "Glasgow",
+    "G11 9QX",
+    "2013-05-26",
+    null
+  ],
+  [
+    "PR3689",
+    "2 Manor Rd",
+    "Glasgow",
+    "G32 4QX",
+    "2013-04-28",
+    null
+  ],
+  [
+    "PR2145",
+    "18 Dale Rd",
+    "Glasgow",
+    "G12",
+    null,
+    null
+  ],
+  [
+    "PR1678",
+    "5 Novar Dr",
+    "Glasgow",
+    "G12 9AX",
+    null,
+    null
+  ],
+  [
+    "PR1589",
+    "44 Elm St",
+    "Edinburgh",
+    "EH3 5FD",
+    "2013-06-12",
+    "very spacious"
+  ],
+  [
+    "PR9512",
+    "10 Broadway",
+    "Cardiff",
+    "CF24 3SG",
+    "2013-06-15",
+    null
+  ],
+  [
+    "PR5623",
+    "3 Hillcrest",
+    "Brighton",
+    "BN1 3PQ",
+    "2013-07-01",
+    "lovely view"
+  ],
+  [
+    "PR3734",
+    "1 Riverside",
+    "Manchester",
+    "M1 3HJ",
+    "2013-07-03",
+    "great location"
+  ],
+  [
+    "PR2289",
+    "9 Meadow Rd",
+    "Liverpool",
+    "L1 4RT",
+    "2013-07-07",
+    "nice garden"
+  ],
+  [
+    "PR1534",
+    "20 King St",
+    "Liverpool",
+    "L1 9DG",
+    "2013-07-15",
+    "Nice location"
+  ],
+  [
+    "PR1645",
+    "5 Queen St",
+    "Manchester",
+    "M3 1DU",
+    "2013-08-01",
+    "Too expensive"
+  ],
+  [
+    "PR1756",
+    "15 Princess St",
+    "Cardiff",
+    "CF24 1BY",
+    "2013-07-20",
+    "Very cozy"
+  ],
+  [
+    "PR1867",
+    "33 Castle St",
+    "Bristol",
+    "BS1 4PQ",
+    "2013-08-05",
+    "Good size"
+  ],
+  [
+    "PR1978",
+    "12 York Rd",
+    "Leeds",
+    "LS1 4AJ",
+    "2013-08-10",
+    "Needs renovation"
+  ],
+  [
+    "PR2089",
+    "45 Park Rd",
+    "Edinburgh",
+    "EH1 5BU",
+    "2013-08-12",
+    "Perfect fit"
+  ],
+  [
+    "PR2190",
+    "29 Station St",
+    "Birmingham",
+    "B2 4RT",
+    "2013-08-20",
+    "Too small"
+  ],
+  [
+    "PR2323",
+    "80 Elm St",
+    "Brighton",
+    "BN1 2RT",
+    "2013-08-30",
+    "Great view"
+  ],
+  [
+    "PR2545",
+    "18 Abbey Rd",
+    "Liverpool",
+    "L12 5BW",
+    "2013-09-05",
+    "Quiet area"
+  ],
+  [
+    "PR2656",
+    "7 Market St",
+    "Manchester",
+    "M2 2FJ",
+    "2013-09-10",
+    "No garden"
+  ],
+  [
+    "PR2767",
+    "9 Victoria St",
+    "Cardiff",
+    "CF11 6RG",
+    "2013-09-12",
+    "Very modern"
+  ],
+  [
+    "PR2878",
+    "22 George St",
+    "Bristol",
+    "BS2 0DH",
+    "2013-09-15",
+    "Needs more space"
+  ],
+  [
+    "PR2989",
+    "11 Church Lane",
+    "Manchester",
+    "M4 1NP",
+    "2013-09-20",
+    "Good location"
+  ],
+  [
+    "PR2989",
+    "11 Church Lane",
+    "Manchester",
+    "M4 1NP",
+    "2013-10-15",
+    "Modern kitchen"
+  ],
+  [
+    "PR3090",
+    "33 Rose Street",
+    "Glasgow",
+    "G1 2TU",
+    "2013-09-22",
+    "Needs some work"
+  ],
+  [
+    "PR3090",
+    "33 Rose Street",
+    "Glasgow",
+    "G1 2TU",
+    "2013-10-18",
+    "Needs renovation"
+  ],
+  [
+    "PR3112",
+    "7 Oakwood Drive",
+    "Birmingham",
+    "B1 1WW",
+    "2013-09-25",
+    "Perfect size"
+  ],
+  [
+    "PR3112",
+    "7 Oakwood Drive",
+    "Birmingham",
+    "B1 1WW",
+    "2013-10-20",
+    "Close to work"
+  ],
+  [
+    "PR3223",
+    "19 Willow Road",
+    "Leeds",
+    "LS1 5XX",
+    "2013-09-28",
+    "Too expensive"
+  ],
+  [
+    "PR3223",
+    "19 Willow Road",
+    "Leeds",
+    "LS1 5XX",
+    "2013-10-22",
+    "Nice community"
+  ],
+  [
+    "PR3334",
+    "26 Cedar Avenue",
+    "Bristol",
+    "BS1 6YY",
+    "2013-10-01",
+    "Nice neighborhood"
+  ],
+  [
+    "PR3334",
+    "26 Cedar Avenue",
+    "Bristol",
+    "BS1 6YY",
+    "2013-10-25",
+    "Good value"
+  ],
+  [
+    "PR3445",
+    "42 Maple Street",
+    "Edinburgh",
+    "EH1 1ZZ",
+    "2013-10-03",
+    "Great garden"
+  ],
+  [
+    "PR3556",
+    "15 Birch Lane",
+    "Liverpool",
+    "L1 7AA",
+    "2013-10-05",
+    "Too small"
+  ],
+  [
+    "PR3667",
+    "8 Pine Close",
+    "Cardiff",
+    "CF10 2BB",
+    "2013-10-08",
+    "Lovely view"
+  ],
+  [
+    "PR3889",
+    "37 Sycamore Avenue",
+    "Brighton",
+    "BN1 4DD",
+    "2013-10-12",
+    "Spacious rooms"
+  ]
+]

@@ -1,0 +1,6 @@
+[
+  [
+    "property_reviews",
+    "CREATE TABLE property_reviews (\n    propertyno CHAR(5),\n    clientno CHAR(5),\n    review_date DATE,\n    rating INTEGER,\n    comment TEXT\n)"
+  ]
+]
