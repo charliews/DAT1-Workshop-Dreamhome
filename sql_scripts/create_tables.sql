@@ -93,7 +93,6 @@ branchNo TEXT
 FOREIGN KEY (ownerNo) REFERENCES PrivateOwner(ownerNo),
 FOREIGN KEY (staffNo) REFERENCES Staff(staffNo),
 FOREIGN KEY (branchNo) REFERENCES Branch(branchNo)
-
 );
 
 INSERT INTO PropertyForRent (propertyNo, street, city, postcode, type, rooms, rent, ownerNo, staffNo, branchNo) VALUES
@@ -103,3 +102,41 @@ INSERT INTO PropertyForRent (propertyNo, street, city, postcode, type, rooms, re
 ('PG36', '2 Manor Rd', 'Glasgow', 'G32 4QX', 'Flat', 3, 375, 'CO93', 'SG37', 'B003'),
 ('PG21', '18 Dale Rd', 'Glasgow', 'G12', 'House', 5, 600, 'CO87', 'SG37', 'B003'),
 ('PG16', '5 Novar Dr', 'Glasgow', 'G12 9AX', 'Flat', 4, 450, 'CO93', 'SG14', 'B003');
+
+DROP TABLE IF EXISTS Viewing;
+
+CREATE TABLE Viewing
+(
+clientNo TEXT, 
+propertyNo TEXT, 
+viewDate DATE, 
+comment TEXT
+FOREIGN KEY (clientNo) REFERENCES Client(clientNo),
+FOREIGN KEY (propertyNo) REFERENCES PropertyForRent(propertyNo)
+);
+
+INSERT INTO Viewing (clientNo, propertyNo, viewDate, comment) VALUES
+('CR76', 'PA14', '2025-05-24', 'too small'),
+('CR56', 'PG4', '2025-08-20', 'too remote'),
+('CR74', 'PG36', '2025-04-14', NULL),
+('CR62', 'PG16', '2025-05-26', 'no eating room'),
+('CR56', 'PA14', '2025-05-14', NULL);
+
+DROP TABLE IF EXISTS Registration;
+
+CREATE TABLE Registration
+(
+clientNo TEXT, 
+branchNo TEXT, 
+staffNo TEXT, 
+dateJoined DATE
+FOREIGN KEY (clientNo) REFERENCES CLIENT(clientNo),
+FOREIGN KEY (branchNo) REFERENCES Branch(branchNo),
+FOREIGN KEY (staffNo) REFERENCES Staff(staffNo)
+);
+
+INSERT INTO Registration (clientNo, branchNo, staffNo, dateJoined) VALUES
+('CR76', 'B005', 'SL41', '2025-11-12'),
+('CR56', 'B003', 'SG37', '2025-04-20'),
+('CR74', 'B003', 'SG14', '2025-10-16'),
+('CR62', 'B004', 'SA9', '2025-03-07');
