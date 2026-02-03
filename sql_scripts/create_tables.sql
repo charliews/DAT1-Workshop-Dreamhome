@@ -1,3 +1,4 @@
+PRAGMA foreign_keys = ON;
 DROP TABLE IF EXISTS Branch;
 
 CREATE TABLE Branch
@@ -23,8 +24,8 @@ fName TEXT,
 lName TEXT,
 position TEXT,
 sex TEXT,
-DOB TEXT,
-salary TEXT,
+DOB DATE,
+salary REAL,
 branchNo TEXT,
 FOREIGN KEY (branchNo) REFERENCES Branch(branchNo)
 );
@@ -41,12 +42,12 @@ DROP TABLE IF EXISTS Client;
 
 CREATE TABLE Client
 (
-clientNo TEXT, 
+clientNo TEXT PRIMARY KEY, 
 fName TEXT, 
 lName TEXT, 
 telNo TEXT, 
 prefType TEXT, 
-maxRent TEXT, 
+maxRent REAL, 
 email TEXT
 );
 
@@ -55,3 +56,50 @@ INSERT INTO Client (clientNo, fName, lName, telNo, prefType, maxRent, email) VAL
 ('CR56', 'Aline', 'Stewart', '0141-848-1825', 'Flat', 350, 'a.stewart@yahoo.co.uk'),
 ('CR74', 'Mike', 'Ritchie', '01475-983179', 'House', 750, 'mritchie01@hotmail.com'),
 ('CR62', 'Mary', 'Tregear', '01224-196720', 'Flat', 600, 'm.tregear@hotmail.co.uk');
+
+DROP TABLE IF EXISTS PrivateOwner;
+
+CREATE TABLE PrivateOwner
+(
+ownerNo TEXT, 
+fName TEXT, 
+lName TEXT, 
+address TEXT, 
+telNo TEXT, 
+email TEXT, 
+password TEXT
+);
+
+INSERT INTO PrivateOwner(ownerNo, fName, lName, address, telNo, email, password) VALUES
+('CO46', 'Joe', 'Keogh', '2 Fergus Dr, Aberdeen AB2 7SX', '01224-861212', 'j.keogh@gmail.com', '********'),
+('CO87', 'Carol', 'Farrell', '6 Achray St, Glasgow G32 9DX', '0141-357-7419', 'c.farrell@hotmail.com', '********'),
+('CO40', 'Tina', 'Murphy', '63 Well St, Glasgow G42 9FX', '0141-943-1728', 't.murphy@hotmail.com', '********'),
+('CO93', 'Tony', 'Shaw', '12 Park Pl, Glasgow G4 6FF', '0141-225-7025', 't.shaw@hotmail.com', '********');
+
+DROP TABLE IF EXISTS PropertyForRent;
+
+CREATE TABLE PropertyForRent
+(
+propertyNo TEXT, 
+street TEXT,
+city TEXT, 
+postcode TEXT, 
+type TEXT, 
+rooms INTEGER, 
+rent REAL, 
+ownerNo TEXT, 
+staffNo TEXT,
+branchNo TEXT
+FOREIGN KEY (ownerNo) REFERENCES PrivateOwner(ownerNo),
+FOREIGN KEY (staffNo) REFERENCES Staff(staffNo),
+FOREIGN KEY (branchNo) REFERENCES Branch(branchNo)
+
+);
+
+INSERT INTO PropertyForRent (propertyNo, street, city, postcode, type, rooms, rent, ownerNo, staffNo, branchNo) VALUES
+('PA14', '16 Holhead', 'Aberdeen', 'AB7 5SQ', 'House', 6, 650, 'CO46', 'SA9', 'B004'),
+('PL94', '6 Argyll St', 'London', 'NW2', 'Flat', 4, 400, 'CO87', 'SL41', 'B005'),
+('PG4', '6 Lawrence St', 'Glasgow', 'G11 9QX', 'Flat', 3, 350, 'CO40', 'SG14', 'B003'),
+('PG36', '2 Manor Rd', 'Glasgow', 'G32 4QX', 'Flat', 3, 375, 'CO93', 'SG37', 'B003'),
+('PG21', '18 Dale Rd', 'Glasgow', 'G12', 'House', 5, 600, 'CO87', 'SG37', 'B003'),
+('PG16', '5 Novar Dr', 'Glasgow', 'G12 9AX', 'Flat', 4, 450, 'CO93', 'SG14', 'B003');
