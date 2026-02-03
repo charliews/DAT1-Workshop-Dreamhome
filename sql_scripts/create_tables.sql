@@ -80,7 +80,7 @@ DROP TABLE IF EXISTS PropertyForRent;
 
 CREATE TABLE PropertyForRent
 (
-propertyNo TEXT, 
+propertyNo TEXT PRIMARY KEY, 
 street TEXT,
 city TEXT, 
 postcode TEXT, 
@@ -89,7 +89,7 @@ rooms INTEGER,
 rent REAL, 
 ownerNo TEXT, 
 staffNo TEXT,
-branchNo TEXT
+branchNo TEXT,
 FOREIGN KEY (ownerNo) REFERENCES PrivateOwner(ownerNo),
 FOREIGN KEY (staffNo) REFERENCES Staff(staffNo),
 FOREIGN KEY (branchNo) REFERENCES Branch(branchNo)
@@ -110,7 +110,8 @@ CREATE TABLE Viewing
 clientNo TEXT, 
 propertyNo TEXT, 
 viewDate DATE, 
-comment TEXT
+comment TEXT,
+PRIMARY KEY (clientNo, PropertyNo, viewDate),
 FOREIGN KEY (clientNo) REFERENCES Client(clientNo),
 FOREIGN KEY (propertyNo) REFERENCES PropertyForRent(propertyNo)
 );
@@ -129,8 +130,9 @@ CREATE TABLE Registration
 clientNo TEXT, 
 branchNo TEXT, 
 staffNo TEXT, 
-dateJoined DATE
-FOREIGN KEY (clientNo) REFERENCES CLIENT(clientNo),
+dateJoined DATE,
+PRIMARY KEY (clientNo, branchNo),
+FOREIGN KEY (clientNo) REFERENCES Client(clientNo),
 FOREIGN KEY (branchNo) REFERENCES Branch(branchNo),
 FOREIGN KEY (staffNo) REFERENCES Staff(staffNo)
 );
